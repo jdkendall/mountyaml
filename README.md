@@ -89,6 +89,8 @@ Verify:
 kubectl exec -it <pod-name> -- cat /app/config/servers.yaml
 ```
 
+## Example Request/Response pair
+
 Requested via curl:
 
 ```bash
