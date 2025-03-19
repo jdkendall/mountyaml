@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: Mounting k8s YAML
+  config:
+    import:
+        - optional:file:/app/config/servers.yaml
+

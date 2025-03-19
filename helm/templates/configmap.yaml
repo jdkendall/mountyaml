@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ .Release.Name }}-config
+data:
+  servers.yaml: |
+    config:
+      servers:
+        {{- toYaml .Values.config.servers | nindent 8 }}
+
